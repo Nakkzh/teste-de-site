@@ -1,0 +1,102 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3.5</title>
+    <style>
+        body {
+            background-image: url('./Imagens/1001.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1200px;
+            max-width: 90%;
+        }
+
+        .caixa {
+            position: absolute;
+            top: 370px;  /* AJUSTE ESTE VALOR */
+            left: 935px;
+            transform: translateX(-50%);
+            width: 800px;
+        }
+
+        .formulario-na-caixa {
+            position: absolute;
+            top: 450px;  /* 20px abaixo da caixa */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            padding: 20px;
+            color: #000000;
+        }
+
+        .formulario-na-caixa input,
+        .formulario-na-caixa textarea,
+        .formulario-na-caixa select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        .formulario-na-caixa button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .botao-proxima-pagina {
+            position: absolute;
+            bottom: -200px;
+            left: 400;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .botao-proxima-pagina:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <img src="./Imagens/Titulo2.png" alt="Logo" class="logo">
+    <img src="./Imagens/Box.png" alt="Caixa de diálogo" class="caixa">
+    
+    <div class="formulario-na-caixa">
+        <h2 style="text-align: center; margin-bottom: 20px;"></h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <select required>
+                <option value="">Motivo do contato</option>
+                <option value="trabalho">Proposta de trabalho</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+            </select>
+            <textarea rows="4" placeholder="Assunto que deseja tratar" required></textarea>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+        <a href="index.html">
+        <img 
+            src="./Imagens/ferrao2.png" 
+            alt="Página anterior" 
+            class="botao-proxima-pagina"
+            width="1000"
+        >
+    </a>
+</body>
+</html>

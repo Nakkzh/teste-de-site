@@ -1,0 +1,133 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3.5 - Blog Profissional</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./Imagens/1000.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1200px;
+            max-width: 90%;
+        }
+        
+        .caixa {
+            position: absolute;
+            top: 500px;
+            right: -390px;
+            transform: translateX(-50%);
+            width: 800px;
+        }
+        
+        .conteudo {
+            position: absolute;
+            top: 320px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            padding: 20px;
+        }
+        
+        .segunda-caixa {
+            position: absolute;
+            top: 500px;
+            left: 430px;
+            transform: translateX(-50%);
+            width: 800px;
+        }
+        
+        .segundo-conteudo {
+            position: absolute;
+            top: 820px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            padding: 20px;
+        }
+
+        /* NOVOS ESTILOS (APENAS PARA TEXTO) */
+        .texto-caixa {
+            position: absolute;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .texto-caixa-1 {
+            top: 560px;
+            right: -250px;
+            transform: translateX(-50%);
+            width: 650px;
+            text-align: center;
+        }
+        .texto-caixa-2 {
+            top: 560px;
+            left: 430px;
+            transform: translateX(-50%);
+            width: 650px;
+        }
+
+        .botao-proxima-pagina {
+            position: absolute;
+            bottom: -400px;
+            right: -800;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .botao-proxima-pagina:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo no topo (original) -->
+    <img src="./Imagens/Titulo.png" alt="Logo" class="logo">
+
+    <!-- Primeira caixa (original) -->
+    <img src="./Imagens/Box.png" alt="Caixa de diálogo" class="caixa">
+    
+    <!-- Segunda caixa (original) -->
+    <img src="./Imagens/Box.png" alt="Caixa de diálogo" class="segunda-caixa">
+
+    <!-- TEXTO NA PRIMEIRA CAIXA (NOVO) -->
+    <div class="texto-caixa texto-caixa-1">
+        <h1>EXPERIÊNCIAS</h1>
+        <p style="text-align: left;">Possuo experiência prévia na área de vendas, o que me proporcionou habilidades importantes como comunicação eficaz, atendimento ao cliente e capacidade de lidar com diferentes perfis de pessoas. Esse contato constante com o público também desenvolveu meu senso de responsabilidade e proatividade no ambiente de trabalho.
+
+Tenho familiaridade com o trabalho em equipe e sou adaptável a diferentes contextos, o que facilita a colaboração em projetos coletivos e ambientes dinâmicos.
+
+Na área de tecnologia, venho desenvolvendo conhecimentos em programação, com experiência prática adquirida durante o curso técnico em TI no SENAI. Além disso, possuo nível básico de inglês, o que me permite compreender materiais técnicos e realizar leituras essenciais para aprofundar meus estudos na área.</p>
+    </div>
+
+    <!-- TEXTO NA SEGUNDA CAIXA (NOVO) -->
+    <div class="texto-caixa texto-caixa-2">
+        <h1 style="text-align: center;">SOBRE MIM</h1>
+        <h2 style="text-align: center;">João Guilherme Godoy Lanza da Silva</h2>
+        Sou um estudante de Tecnologia da Informação com 16 anos, atualmente cursando o ensino técnico no SENAI. Resido em Álvares Machado (SP) e estou em busca de crescimento profissional na área de TI, com foco em desenvolvimento de software, redes e suporte técnico.
+        Tenho interesse especial por tecnologia e estou constantemente buscando aprimorar meus conhecimentos em programação e inglês, além de manter uma rotina ativa de estudos e leitura. Fora do ambiente acadêmico, gosto de jogar com amigos e explorar novas ferramentas digitais. Meu objetivo é construir uma carreira sólida em tecnologia, contribuindo com soluções criativas e aprendendo com os desafios do setor.
+    </div>
+
+    <a href="index2.html">
+        <img 
+            src="./Imagens/ferrao.png" 
+            alt="Próxima página" 
+            class="botao-proxima-pagina"
+            width="1000"
+        >
+    </a>
+</body>
+</html>
